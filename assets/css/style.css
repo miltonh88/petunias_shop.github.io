@@ -1,0 +1,171 @@
+:root{
+  --color-acento: #ee6130;
+  --color-acento-claro: #ee613033;
+  --color-texto: black;
+  --petunias: #0097b2;
+}
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fce6e9;
+  }
+
+  main {
+    margin: 10px 10px;
+    background-color: #fce6e9;
+  }
+
+  a{
+    background-color: unset;
+    border:unset;
+    cursor:pointer;
+    text-decoration: none;
+    transition: 200ms;
+    color: var(--color-texto);
+  }
+
+  a:hover:not(#cart), button:hover{
+    color: var(--color-acento);
+  }
+
+  header{
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.09);
+    margin-bottom: 0px;
+    font-size: larger;
+  }
+
+  header nav {
+    display: flex;
+    background-color: #0097b2;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  header nav div button .navbar-toggler {
+    color: black;
+  }
+
+  header nav img{
+    height: 25px;
+  }
+
+  .offcanvas-header {
+    background-color: #fce6e9;
+    margin: 0;
+    padding: 0;
+  }
+
+  .offcanvas-header h5 {
+    color: var(--petunias);
+  }
+
+  .offcanvas-body {
+    background-color: #fce6e9;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item a {
+    color: var(--petunias);
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .slogan {
+    text-align: center;
+  }
+  
+  .slogan img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    text-align: center; /* Alinea el contenido al centro */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%; /* Ajusta el ancho de los controles según tus preferencias */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 50px; /* Ajusta el tamaño de los íconos según tus preferencias */
+    height: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    /* Media query para pantallas más pequeñas, ajusta según tus necesidades */
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: none; /* Oculta los controles en pantallas pequeñas si lo prefieres */
+    }
+  }
+
+  #cuenta-carrito{
+    position: absolute;
+    background-color: var(--color-acento);
+    border-radius: 100%;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    aspect-ratio: 1;
+    text-align: center;
+    /* margin-bottom: 15px; */
+  }
+  
+  footer{
+    background-color: #0097b2;
+    text-align: center;
+    box-shadow: -1px -3px 5px rgba(0, 0, 0, 0.09);
+    padding-top: 2px;
+    margin-top: auto;
+  }
+  
+  footer a{
+    text-decoration: underline;
+    color: white;
+  }
+
+  footer h5 {
+    color: white; /* Puedes cambiar el color a tu preferencia */
+  }
+
+  footer .nav-item a {
+    color: white;
+  }
+  /* Estilos para el texto de contacto */
+  footer h4 {
+    color: white; /* Puedes cambiar el color a tu preferencia */
+  }
+  
+  footer .nav-link.text-body-secondary {
+    color: white; /* Puedes cambiar el color a tu preferencia */
+  }
+  
+  /* Estilo para el texto del copyright */
+  footer p {
+    color: white; /* Puedes cambiar el color a tu preferencia */
+  }
+
+
+  
